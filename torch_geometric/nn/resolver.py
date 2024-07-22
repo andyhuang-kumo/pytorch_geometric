@@ -72,12 +72,7 @@ def aggregation_resolver(query: Union[Any, str], *args, **kwargs):
         if isinstance(aggr, type) and issubclass(aggr, base_cls)
     ]
     aggr_dict = {
-        'add':
-        aggr.SumAggregation,
-        'patch_transformer':
-        aggr.PatchTransformerAggregation,
-        'hierachical_patch_transformer':
-        aggr.Hierachical_PatchTransformerAggregation,
+        'add': aggr.SumAggregation,
     }
     return resolver(aggrs, aggr_dict, query, base_cls, None, *args, **kwargs)
 
