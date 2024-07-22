@@ -26,6 +26,7 @@ from .set_transformer import SetTransformerAggregation
 from .lcm import LCMAggregation
 from .variance_preserving import VariancePreservingAggregation
 from .patch_transformer import PatchTransformerAggregation
+from .hierarchical_pt import Hierachical_PatchTransformerAggregation
 
 __all__ = classes = [
     'Aggregation',
@@ -55,4 +56,5 @@ __all__ = classes = [
     'LCMAggregation',
     'VariancePreservingAggregation',
     'PatchTransformerAggregation',
+    'Hierachical_PatchTransformerAggregation',
 ]
